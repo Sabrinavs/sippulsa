@@ -40,7 +40,6 @@ class Auth extends CI_Controller
   public function login()
   {
     //melakukan pengalihan halaman sesuai dengan levelnya
-    if ($this->session->userdata('level') == "karyawan"){redirect('karyawan/karyawan');}
     if ($this->session->userdata('level') == "admin"){redirect('admin/admin');}
 
     //proses login dan validasi nya

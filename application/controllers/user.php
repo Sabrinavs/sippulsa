@@ -51,7 +51,8 @@ class User extends CI_Controller {
 			if (empty($password)) {
 			$data 	= array('nama_lengkap'=>$nama,
 			 					'username'=>$username,
-			 					 'level'=>$level, 'active'=>$active);
+			 					 'level'=>$level, 
+								 'active'=>$active);
 			}
 			 else{
 			$data 	= array('nama_lengkap'=>$nama,

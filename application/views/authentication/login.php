@@ -1,12 +1,13 @@
 <html>
 <head>
-	<title>Login Sistem Informasi Penjualan Pulsa</title>
+	<title>DAEBAK PULSA</title>
 	<link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/fonts/font-awesome" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         .form-signin
         {
+            background-color: #337;
             max-width: 330px;
             padding: 15px;
             margin: 0 auto;
@@ -35,6 +36,7 @@
         }
         .form-signin input[type="text"]
         {
+            
             margin-bottom: -1px;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
@@ -49,14 +51,13 @@
         {
             margin-top: 20px;
             padding: 40px 0px 20px 0px;
-            background-color: #f7f7f7;
+            background-color: #337;
             -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
             -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
         }
         .login-title
         {
-            color: #555;
             font-size: 18px;
             font-weight: 400;
             display: block;
@@ -85,7 +86,8 @@
         }
       ?>
         <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Login Sistem Informasi Penjualan Pulsa</h1>
+            <h1 class="text-center login-title">Halaman Login</h1>
+            <h2 class="text-center login-title">DAEBAK PULSA</h2>
             <div class="account-wall">
                 <img class="profile-img" src="<?php echo base_url(); ?>assets/images/user.png"
                     alt="">    
@@ -99,6 +101,12 @@
 
                <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value="login">Masuk</button>
                 </form>
+                  <hr>
+                  <div class="text-center">
+                    <a class="small" href="<?=base_url('autentifikasi/LupaPassword');?>">Lupa Password?</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="small" href="<?=base_url('autentifikasi/registrasi');?>">Belum Punya Akun?Daftar!</a>
             </div>
             <div id="error" style="margin-top: 10px"></div>
         </div>
